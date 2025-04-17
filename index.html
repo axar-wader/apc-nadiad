@@ -2,173 +2,59 @@
 <html ⚡>
   <head>
     <meta charset="utf-8" />
-    <title>Your Elegant Web Story</title>
+    <title>Your Web Story</title>
     <link rel="canonical" href="your-canonical-url.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>body{visibility:hidden}</style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
-    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-story"
+            src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
     <style amp-custom>
-      amp-story {
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-      }
-      
-      .page-title {
-        font-weight: bold;
-        font-size: 2.2em;
-        line-height: 1.2;
-        padding: 0 24px;
-        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-      }
-      
-      .page-subtitle {
-        font-size: 1.2em;
-        line-height: 1.5;
-        padding: 0 24px;
-        text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
-      }
-      
-      .overlay {
-        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
-        width: 100%;
-        height: 40%;
-      }
-      
-      .fadein {
-        opacity: 0;
-        animation: fadeIn 0.8s ease-in forwards;
-      }
-      
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      
-      .delay-200 { animation-delay: 0.2s; }
-      .delay-400 { animation-delay: 0.4s; }
-      .delay-600 { animation-delay: 0.6s; }
-      
-      .final-page {
-        background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      
-      .final-title {
-        font-size: 2.4em;
-        margin-bottom: 24px;
-      }
-      
-      .final-text {
-        font-size: 1.2em;
-        line-height: 1.6;
-        max-width: 80%;
-        margin: 0 auto;
-      }
-      
-      .cta-button {
-        background-color: white;
-        color: #333;
-        padding: 12px 24px;
-        border-radius: 24px;
-        font-weight: bold;
-        margin-top: 32px;
-        display: inline-block;
-      }
-      
-      .image-filter {
-        filter: brightness(0.9) contrast(1.1);
-      }
+      amp-story { font-family: 'Arial', sans-serif; }
     </style>
   </head>
   <body>
     <amp-story standalone
-               title="Elegant Journey"
-               publisher="Your Brand"
+               title="My First Story"
+               publisher="Your Name"
                publisher-logo-src="logo.png"
                poster-portrait-src="cover.jpg">
-      
       <!-- Page 1 -->
       <amp-story-page id="page1">
         <amp-story-grid-layer template="fill">
-          <amp-img class="image-filter" src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744916094/qbpbgpmrlknzqyoglhfl.jpg" 
-                  width="1080" height="1920" layout="responsive" animate-in="fade-in" animate-in-duration="1s"></amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="overlay">
-          <div class="page-title fadein">Discover Beauty</div>
-          <div class="page-subtitle fadein delay-400">A journey through inspiration</div>
+          <amp-img src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744916094/qbpbgpmrlknzqyoglhfl.jpg" width="1080" height="1920" layout="responsive"></amp-img>
         </amp-story-grid-layer>
       </amp-story-page>
-      
       <!-- Page 2 -->
       <amp-story-page id="page2">
         <amp-story-grid-layer template="fill">
-          <amp-img class="image-filter" src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744916096/ma3yn5hfydkenfdz1z25.jpg" 
-                  width="1080" height="1920" layout="responsive" animate-in="zoom-in" animate-in-duration="1.5s"></amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="overlay">
-          <div class="page-title fadein">Embrace Nature</div>
-          <div class="page-subtitle fadein delay-400">Find peace in every moment</div>
+          <amp-img src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744916096/ma3yn5hfydkenfdz1z25.jpg" width="1080" height="1920" layout="responsive"></amp-img>
         </amp-story-grid-layer>
       </amp-story-page>
-      
       <!-- Page 3 -->
       <amp-story-page id="page3">
         <amp-story-grid-layer template="fill">
-          <amp-img class="image-filter" src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744916093/qlypylmbglyq27v535ij.jpg" 
-                  width="1080" height="1920" layout="responsive" animate-in="pan-right" animate-in-duration="2s"></amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="overlay">
-          <div class="page-title fadein">Seek Adventure</div>
-          <div class="page-subtitle fadein delay-400">The world awaits your footsteps</div>
+          <amp-img src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744916093/qlypylmbglyq27v535ij.jpg" width="1080" height="1920" layout="responsive"></amp-img>
         </amp-story-grid-layer>
       </amp-story-page>
-      
       <!-- Page 4 -->
       <amp-story-page id="page4">
         <amp-story-grid-layer template="fill">
-          <amp-img class="image-filter" src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744916093/yspkvdbpxogptqjdkugt.jpg" 
-                  width="1080" height="1920" layout="responsive" animate-in="fade-in" animate-in-duration="1s"></amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="overlay">
-          <div class="page-title fadein">Feel Inspired</div>
-          <div class="page-subtitle fadein delay-400">Let your imagination soar</div>
+          <amp-img src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744916093/yspkvdbpxogptqjdkugt.jpg" width="1080" height="1920" layout="responsive"></amp-img>
         </amp-story-grid-layer>
       </amp-story-page>
-      
       <!-- Page 5 -->
       <amp-story-page id="page5">
         <amp-story-grid-layer template="fill">
-          <amp-img class="image-filter" src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744917207/zupjmfynbdqqurzjm94t.jpg" 
-                  width="1080" height="1920" layout="responsive" animate-in="pan-left" animate-in-duration="2s"></amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="overlay">
-          <div class="page-title fadein">Live Boldly</div>
-          <div class="page-subtitle fadein delay-400">Embrace every opportunity</div>
+          <amp-img src="https://res.cloudinary.com/dkvtnjc2f/image/upload/p_auto,q_auto/v1744917207/zupjmfynbdqqurzjm94t.jpg" width="1080" height="1920" layout="responsive"></amp-img>
         </amp-story-grid-layer>
       </amp-story-page>
-      
-      <!-- Page 6 (Final page with text) -->
+      <!-- Page 6 -->
       <amp-story-page id="page6">
         <amp-story-grid-layer template="fill">
-          <div class="final-page"></div>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical">
-          <div class="final-title" animate-in="fly-in-top" animate-in-duration="1s">Your Journey Awaits</div>
-          <div class="final-text" animate-in="fly-in-bottom" animate-in-duration="1s" animate-in-delay="0.3s">
-            Discover more inspiring stories and adventures that will transform your perspective and enrich your life. Every moment is an opportunity for something extraordinary.
-          </div>
-          <div class="cta-button" animate-in="pulse" animate-in-duration="1s" animate-in-delay="0.8s">
-            EXPLORE NOW
-          </div>
+          <amp-img src="img6.jpg" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
       </amp-story-page>
-      
     </amp-story>
   </body>
 </html>
